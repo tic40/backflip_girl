@@ -172,8 +172,8 @@
 			<!-- main -->
 			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="">
 				<div class="thumbnail">
-					<a href="/#/comic/{{$index+1}}" class="thumbnail">
-						<img src="../assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
+					<a href="{{baseUrl}}/#/comic/{{$index+1}}" class="thumbnail">
+						<img src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
 						<h4>{{$index+1}}話 {{item.title}}/ {{item.pages}}P</h4>
@@ -186,8 +186,8 @@
 			<div class="page-header"><h2>番外編</h2></div>
 			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3">
 				<div class="thumbnail">
-					<a href="/#/comic/ex/{{$index+1}}" class="thumbnail">
-						<img src="../assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
+					<a href="{{baseUrl}}/#/comic/ex/{{$index+1}}" class="thumbnail">
+						<img src="{{baseUrl}}/assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
 						<h4>{{item.title}}/{{item.pages}}P</h4>
@@ -205,8 +205,8 @@
 
 			<div class="row">
 				<div style="height: 250px;" ng-repeat="num in [] | range:illustNum" class="col-xs-4 col-md-2">
-					<a class="thumbnail" href="#/gallery/{{num+1}}">
-						<img src="../assets/img/illust/illust{{num+1}}.jpg" alt="" />
+					<a class="thumbnail" href="{{baseUrl}}/#/gallery/{{num+1}}">
+						<img src="{{baseUrl}}/assets/img/illust/illust{{num+1}}.jpg" alt="" />
 					</a>
 			 	</div>
 			</div>

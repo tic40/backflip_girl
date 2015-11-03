@@ -36,6 +36,7 @@ app.config(['$routeProvider',
 app.constant('commonConstants', {
 	TITLE: 'BACKFLIP GIRL',
 	VERSION: '0.01',
+	BASE_URL: 'backflip_girl',
     SUB_TITLES: [
 		'またあたしだよ。',
 		'誰かのために生きる事など、できるのだろうか？',
@@ -77,7 +78,6 @@ app.constant('commonConstants', {
 		'最後に会った時にその子は、とんぼ返りをして見せてくれたそうですよ。',
 		'坂本さん、無事に京都着きましたかねぇ。'
 	],
-    BASE_URL: 'http://www.google.com?api',
 	TOP_TABS: [
 		'INTRO',
 		'COMIC',
@@ -236,6 +236,7 @@ app.controller('TopController', function($scope, commonConstants, backflipComicC
 		$scope.webComicSp = backflipComicConstants.sp;
 		$scope.currentTab = curTabService.curTab.get();
 		$scope.illustNum = commonConstants.ILLUST_NUM;
+		$scope.baseUrl = commonConstants.BASE_URL;
 	}
 
 	// get subtitle random
