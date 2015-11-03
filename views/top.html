@@ -170,13 +170,14 @@
 			<div class="page-header"><h2>COMICS</h2></div>
 
 			<!-- main -->
-			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="">
+			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="height: 420px;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/{{$index+1}}" class="thumbnail">
-						<img src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
+						<img style="height:200px;" src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
-						<h4>{{$index+1}}話 {{item.title}}/ {{item.pages}}P</h4>
+						<p>{{$index+1}}話</p>
+						<p style="font-size: 1.4em;">{{item.title}} <small>{{item.pages}}P</small></p>
 					</div>
 				</div>
 			</div>
@@ -184,13 +185,13 @@
 
 			<!-- sp -->
 			<div class="page-header"><h2>番外編</h2></div>
-			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3">
+			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3" style="height: 440px;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/ex/{{$index+1}}" class="thumbnail">
 						<img src="{{baseUrl}}/assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
-						<h4>{{item.title}}/{{item.pages}}P</h4>
+						<p style="font-size: 1.4em;">{{item.title}} <small>{{item.pages}}P</small></p>
 					</div>
 				</div>
 			</div>
@@ -204,9 +205,9 @@
 			<div class="page-header"><h2>GALLERY</h2></div>
 
 			<div class="row">
-				<div style="height: 250px;" ng-repeat="num in [] | range:illustNum" class="col-xs-4 col-md-2">
+				<div  ng-repeat="num in [] | range:illustNum" class="col-xs-6 col-md-3">
 					<a class="thumbnail" href="{{baseUrl}}/#/gallery/{{num+1}}">
-						<img src="{{baseUrl}}/assets/img/illust/illust{{num+1}}.jpg" alt="" />
+						<img style="height:200px;" src="{{baseUrl}}/assets/img/illust/illust{{num+1}}.jpg" alt="" />
 					</a>
 			 	</div>
 			</div>
@@ -216,12 +217,9 @@
 	<!--other -->
 	<div class="other row" ng-show="currentTab === topTabs[3]">
 		<section class="jumbotron center">
-			<div class="page-header"><h2>OTHER</h2></div>
-
+			<div class="page-header"><h2>TWITTER</h2></div>
 
 			<a class="twitter-timeline" href="https://twitter.com/backflip_girl" data-widget-id="663252040181673984">@backflip_girlさんのツイート</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 		</section>
 	</div>
 
