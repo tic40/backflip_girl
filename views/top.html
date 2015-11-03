@@ -43,7 +43,7 @@
 			<p>またあたしだよ。</p>
 			<p>ここは今日涼氏の漫画「爆宙少女」アーカイブです。</p>
 			<p>2015-11-08 v0.01</p>
-			<img height="200" src="assets/img/gif/fjw1.gif" alt="" />
+			<img height="200" ng-src="assets/img/gif/fjw1.gif" alt="" />
 		  </div>
 		  <div class="modal-footer">
 			<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
@@ -171,7 +171,7 @@
 			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="height: 420px;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/{{$index+1}}" class="thumbnail">
-						<img style="height:200px;" src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
+						<img style="height:200px;" ng-src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
 						<p>{{$index+1}}話</p>
@@ -186,7 +186,7 @@
 			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3" style="height: 440px;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/ex/{{$index+1}}" class="thumbnail">
-						<img src="{{baseUrl}}/assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
+						<img ng-src="{{baseUrl}}/assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
 					</a>
 					<div class="caption">
 						<p style="font-size: 1.4em;">{{item.title}} <small>{{item.pages}}P</small></p>
@@ -205,7 +205,7 @@
 			<div class="row">
 				<div  ng-repeat="num in [] | range:illustNum" class="col-xs-6 col-md-3">
 					<a class="thumbnail" href="{{baseUrl}}/#/gallery/{{num+1}}">
-						<img style="height:200px;" src="{{baseUrl}}/assets/img/illust/illust{{num+1}}.jpg" alt="" />
+						<img style="height:200px;" ng-src="{{baseUrl}}/assets/img/illust/illust{{num+1}}.jpg" alt="" />
 					</a>
 			 	</div>
 			</div>
