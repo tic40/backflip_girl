@@ -9,22 +9,31 @@
 	<!-- css -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<style>
+	li {
+		list-style-type: none;
+	}
+	</style>
 </head>
 <body ng-app='backflipGirl'>
 
+	<!-- view -->
+	<div ng-view></div>
 
-	<div ng-view><!-- angular template --></div>
-
+	<footer class="center" style="padding: 4em 0; background-color: #EEE;">
+		<h4 style="text-align: right; padding-right: 2em;">BACKFLIP GIRL</h4>
+	</footer>
 
 	<!-- script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 	<script src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
 	<script src="assets/js/main.js"></script>
 
 
@@ -40,4 +49,3 @@
 		*/
 	</script>
 </body>
-</html>

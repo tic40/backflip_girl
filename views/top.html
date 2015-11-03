@@ -1,0 +1,228 @@
+<style>
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.intro-text {
+	text-align: left;
+	margin: 0 2em;
+	line-height: 3em;
+}
+.intro-text > p {
+	font-size: 1.2em !important;
+}
+.jumbotron {
+	background-color: white !important;
+}
+.topTab li a {
+	padding: 3rem 0;
+}
+.comicTitle {
+	font-size: 1.2em;
+}
+.nav-tabs > li.active > a {
+	// color
+}
+</style>
+
+
+<div class="jumbotron center">
+	<h1>{{title}} <small>v{{version}}</small></h1>
+	<p style="margin: 1.2em; 2em 0">{{subTitle}}</p>
+
+	<a data-toggle="modal" href="#myModal" class="btn btn-warning">info</a>
+
+	<!-- modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">閉じる</span></button>
+			<h4 class="modal-title" id="myModalLabel">INFO</h4>
+		  </div>
+		  <div class="modal-body" style="text-align: left;">
+			<p>またあたしだよ。</p>
+			<p>ここは今日涼氏の漫画「爆宙少女」アーカイブです。</p>
+			<p>2015-11-08 v0.01</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+</div>
+
+<!-- tab -->
+<nav class="topTab container">
+	<ul class="nav nav-pills nav-justified">
+		<li role="presentation" ng-class="{ active: currentTab === topTabs[$index] }"  ng-repeat="tab in topTabs" ng-click="topTab(tab)" ng-class=""><a>{{tab}}</a></li>
+	</ul>
+</nav>
+
+<div class="container">
+	<!-- introduction -->
+	<div class="introduction" ng-show="currentTab === topTabs[0]">
+		<section class="jumbotron center">
+			<div class="page-header"><h2>INTRO</h2></div>
+			<div class="intro-text">
+				<p>誰かのために生きる事など、できるのだろうか？</p>
+
+				<p>きっと、それは詭弁。</p> 
+
+				<p>今どう動いているか、それを考える事に逃げたいだけ。</p> 
+
+				<p>自分を離れて周りを見るなんて愚行。</p>
+
+				<p>そう言って、爆宙少女は高く飛び立った。</p>
+			</div>
+		</section>
+
+		<section class="jumbotron center">
+			<div class="page-header"><h2>爆宙少女-BACKFLIP GIRL-</h2></div>
+			<div class="intro-text">
+				<p>
+	爆宙少女はおそらくであるが、無機質な少女が様々な人間との交流を通して、人間本来の性質に目覚めていくといった話である。また彼女が人間かどうかは分からない。これからもその点の設定を明言しないつもりである。
+				</p>
+			</div>
+		</section>
+
+		<section class="jumbotron center">
+			<div class="page-header"><h2>episode 1</h2></div>
+			<div class="intro-text">
+				<p>その日少女は飛行機を待っていた。いや、そのように思えた。</p>
+
+				<p>曇りとも晴天とも言えない、灰色がかった空を眺めて。</p>
+
+				<p>私は語りかけた。</p>
+
+				<p>「また君かい？」</p>
+
+				<p>少女は即答する。</p>
+
+				<p>「またあたしだよ」</p>
+
+				<p>と。</p>
+
+				<p>都会の喧騒は嫌いでは無い。より大勢に紛れた方が、１人になれる。大都市の真ん中にいて、自分が薄らいでいくのが分かる過程は、何とも切なく、同時に楽でもある。</p>
+
+				<p>大衆の１人、砂浜の一粒。そう思えば責任は無いかのように感じられる。やはり楽なのだ。</p>
+
+				<p>そんな話、前にもこの子としただろうか。</p>
+
+				<p>「黙れよ」</p>
+
+				<p>少女は言う。</p>
+
+				<p>しばし集中したいとの事。</p>
+
+				<p>不可解に思ったが、私は口をつぐんだ。</p>
+
+				<p>少女は突然立ち上がると、おもむろに両手を振り上げ構えた。</p>
+
+				<p>そして、バック宙を。</p>
+
+				<p>着地はやや危なかった。それでも、以前より上手くなっている。</p>
+
+				<p>私が誉めると少女は喜び、空港を去った。</p>
+
+				<p>空港でバック宙をする少女は、砂浜の一粒では無い気がした。</p>
+
+				<p>ところで、彼女に以前会ったのは、何時何処だったか… </p>
+
+				<p>思い出せないまま、東京行きの飛行機を迎えるのだった。</p>
+			</div>
+		</section>
+
+		<section class="jumbotron center">
+			<div class="page-header"><h2>episode 2</h2></div>
+			<div class="intro-text">
+				<p>これは私があるお侍さんから聞いた不思議な話です。</p>
+
+				<p>その方、何とも変わった人でねぇ。毎日剣術の稽古を終えては、海岸に出て、海の向こうを見てたそうで。</p>
+
+				<p>ある日の事、ふと気付けば隣には幼い女の子が。</p>
+
+				<p>「こん海の向こうには何がある？」</p>
+
+				<p>お侍さんが聞くと、女の子はこう言ったそうで。</p>
+
+				<p>「海の向こうにあるものだよ」</p>
+
+				<p>お侍さん、それからいく先々で偶然その子に会ったそうで。</p>
+
+				<p>気が合ったとか言ってましたね。日本の夜明けを見せると約束したとかも。</p>
+
+				<p>最後に会った時にその子は、とんぼ返りをして見せてくれたそうですよ。</p>
+
+				<p>坂本さん、無事に京都着きましたかねぇ。</p>
+			</div>
+		</section>
+	</div>
+
+	<!-- comic -->
+	<div class="comic row" ng-show="currentTab === topTabs[1]">
+		<section class="jumbotron center">
+			<div class="page-header"><h2>COMICS</h2></div>
+
+			<!-- main -->
+			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="">
+				<div class="thumbnail">
+					<a href="/#/comic/{{$index+1}}" class="thumbnail">
+						<img src="/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
+					</a>
+					<div class="caption">
+						<h4>{{$index+1}}話 {{item.title}}/ {{item.pages}}P</h4>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- sp -->
+			<div class="page-header"><h2>番外編</h2></div>
+			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="/#/comic/ex/{{$index+1}}" class="thumbnail">
+						<img src="/assets/img/comic/backflipGirl/ex{{$index+1}}/1.jpg" alt={{item.title}} />
+					</a>
+					<div class="caption">
+						<h4>{{item.title}}/{{item.pages}}P</h4>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<!--gallery -->
+	<div class="gallery row" ng-show="currentTab === topTabs[2]">
+		<section class="jumbotron center">
+			<div class="page-header"><h2>GALLERY</h2></div>
+
+			<div class="row">
+				<div style="height: 250px;" ng-repeat="num in [] | range:illustNum" class="col-xs-4 col-md-2">
+					<a class="thumbnail" href="#/gallery/{{num+1}}">
+						<img src="/assets/img/illust/illust{{num+1}}.jpg" alt="" />
+					</a>
+			 	</div>
+			</div>
+		</section>
+	</div>
+
+	<!--other -->
+	<div class="other row" ng-show="currentTab === topTabs[3]">
+		<section class="jumbotron center">
+			<div class="page-header"><h2>OTHER</h2></div>
+
+
+			<a class="twitter-timeline" href="https://twitter.com/backflip_girl" data-widget-id="663252040181673984">@backflip_girlさんのツイート</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+		</section>
+	</div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="page-header" style="padding-left: 2em;">
+	<h1><a href="#/">{{page}}話 {{webComicMain[page-1].title}}</a></h1>
+	{{webComicMain[page-1].discription}}
+</div>
+
+<div class="container">
+	<ul>
+		<li ng-repeat="num in [] | range:webComicMain[page-1].pages" style="text-align: center; margin-bottom: 60px;">
+			<img style="border: 0.1em solid #DDD;" src="/assets/img/comic/backflipGirl/{{page}}/{{num+1}}.jpg" alt={{num+1}} />
+		</li>
+	</ul>
+
+	<!-- pager -->
+	<nav>
+		<ul class="pager">
+			<li ng-show="prevFlg" class="previous"><a href="#/comic/{{page-1}}"><span aria-hidden="true">&larr;</span> Prev</a></li>
+			<li><button class="btn btn-default"><a href="#/">TOP</a></button></li>
+			<li ng-show="nextFlg" class="next"><a href="#/comic/{{page+1}}">Next <span aria-hidden="true">&rarr;</span></a></li>
+		</ul>
+	</nav>
+</div>
