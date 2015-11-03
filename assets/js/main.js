@@ -261,6 +261,7 @@ app.controller('ComicController', function($scope, $routeParams, commonConstants
 		$scope.webComicMain = backflipComicConstants.main;
 		$scope.prevFlg = $scope.page > 1 ? true : false;
 		$scope.nextFlg = $scope.page < 16 ? true : false;
+		$scope.baseUrl = commonConstants.BASE_URL;
 	};
 
 	$scope.init();
@@ -275,6 +276,7 @@ app.controller('ComicExController', function($scope, $routeParams, commonConstan
 		$scope.webComicMain = backflipComicConstants.sp;
 		$scope.prevFlg = $scope.page > 1 ? true : false;
 		$scope.nextFlg = $scope.page < 2 ? true : false;
+		$scope.baseUrl = commonConstants.BASE_URL;
 	};
 
 	$scope.init();
@@ -286,6 +288,7 @@ app.controller('ComicExController', function($scope, $routeParams, commonConstan
 app.controller('GalleryController', function($scope, $routeParams, commonConstants, backflipComicConstants){
 	$scope.init = function () {
 		$scope.page = ($routeParams.page) ? Number($routeParams.page) : 1;
+		$scope.baseUrl = commonConstants.BASE_URL;
 	};
 
 	$scope.init();
