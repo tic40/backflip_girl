@@ -1,1 +1,5 @@
-BACKFLIP_GIRL
+# BACKFLIP_GIRL
+
+またあたしだよ。
+
+ここは今日涼氏の漫画「爆宙少女」アーカイブです。

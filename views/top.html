@@ -26,7 +26,7 @@
 
 
 <div class="jumbotron center">
-	<h1>{{title}} <a data-toggle="modal" href="#myModal" class="btn btn-warning">info</a></h1>
+	<h1>{{title}} <a data-toggle="modal" href="#myModal" class="btn btn-success">info</a> <a class="btn btn-success" ng-href="https://github.com/tic40/backflip_girl" target="_blank">github</a></h1>
 	<p style="margin: 1.2em; 2em 0">{{subTitle}}</p>
 
 	<!-- modal -->
@@ -35,13 +35,16 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">閉じる</span></button>
-					<h4 class="modal-title" id="myModalLabel">INFO</h4>
+					<h4 class="modal-title" id="myModalLabel">info</h4>
 				</div>
 				<div class="modal-body" style="text-align: left;">
 					<p>またあたしだよ。</p>
 					<p>ここは今日涼氏の漫画「爆宙少女」アーカイブです。</p>
-					<p>2015-11-08 v0.01</p>
-					<img height="200" ng-src="assets/img/gif/fjw1.gif" alt="" />
+          <div class="center">
+            <img height="80%" ng-src="assets/img/gif/fjw1.gif" alt="" />
+            <br />
+            <small>*マスコットキャラクターFJWくん(仮</small>
+          </div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
