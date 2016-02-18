@@ -26,10 +26,8 @@
 
 
 <div class="jumbotron center">
-	<h1>{{title}} <small>v{{version}}</small></h1>
+	<h1>{{title}} <a data-toggle="modal" href="#myModal" class="btn btn-warning">info</a></h1>
 	<p style="margin: 1.2em; 2em 0">{{subTitle}}</p>
-
-	<a data-toggle="modal" href="#myModal" class="btn btn-warning">info</a>
 
 	<!-- modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -213,9 +211,9 @@
 	<!--other -->
 	<div class="other row" ng-show="currentTab === topTabs[3]">
 		<section class="jumbotron center">
-			<div class="page-header"><h2>TWITTER</h2></div>
+			<div class="page-header"><h2>OTHER</h2></div>
 
-			<a class="twitter-timeline" href="https://twitter.com/backflip_girl" data-widget-id="663252040181673984">@backflip_girlさんのツイート</a>
+			<a style="display:block;" class="twitter-timeline" href="https://twitter.com/backflip_girl" data-widget-id="663252040181673984">@backflip_girlさんのツイート</a>
 
 		</section>
 	</div>
