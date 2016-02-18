@@ -1,0 +1,21 @@
+{
+  "name": "backflip_girl",
+  "homepage": "https://github.com/tic40/backflip_girl",
+  "authors": [
+    "tic40 <ccpzjoh@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-sanitize": "~1.5.0"
+  }
+}

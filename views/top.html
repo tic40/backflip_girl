@@ -164,7 +164,7 @@
 			<div class="page-header"><h2>COMICS</h2></div>
 
 			<!-- main -->
-			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="height: 420px;">
+			<div ng-repeat = "item in webComicMain" class="col-xs-6 col-md-3" style="height: 420px; display: block;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/{{$index+1}}" class="thumbnail">
 						<img style="height:200px;" ng-src="{{baseUrl}}/assets/img/comic/backflipGirl/{{$index+1}}/1.jpg" alt={{item.title}} />
@@ -176,9 +176,8 @@
 				</div>
 			</div>
 
-
 			<!-- sp -->
-			<div class="page-header"><h2>番外編</h2></div>
+			<div class="page-header col-xs-12"><h2>番外編</h2></div>
 			<div ng-repeat = "item in webComicSp" class="col-xs-6 col-md-3" style="height: 440px;">
 				<div class="thumbnail">
 					<a href="{{baseUrl}}/#/comic/ex/{{$index+1}}" class="thumbnail">
